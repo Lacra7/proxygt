@@ -13,7 +13,7 @@ int main() {
 #ifdef _WIN32
     SetConsoleTitleA("proxy by ama");
 #endif
-    printf("enet proxy by ama\n");
+    printf("enet proxy by ama edited by : SannHax\n");
 
     std::thread http(http::run, "127.0.0.1", "17191");
     http.detach();
