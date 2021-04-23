@@ -326,7 +326,7 @@ bool events::out::generictext(std::string packet) {
             else
             {
                 Logs.addTextBox("Ghost Mode``: `4OFF");
-
+                return true;
             }
 
 }else if (find_command(chat, "pinfo")) {
