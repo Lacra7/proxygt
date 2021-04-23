@@ -84,3 +84,4 @@ Anyone using or selling "fixed proxy" is a human failure
 # Thanks to :
 * Gucktubeyt [visit] https://github.com/gucktubeyt
 * ama6nen [visit] https://github.com/ama6nen
+* Fakemodz [visit] https://github.com/Fakemodz
