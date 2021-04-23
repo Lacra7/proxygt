@@ -313,6 +313,21 @@ bool events::out::generictext(std::string packet) {
             }
             return true;
 
+}else if (find_command(chat, "logs")) {
+            Dialog Logs;
+            Logs.addLabelWithIcon("Logs Page", 5016, LABEL_BIG);
+            Logs.addSpacer(SPACER_SMALL);
+            Logs.addLabelWithIcon("Hacks", 32, LABEL_SMALL);
+            if (gt::ghost == true)
+            {
+                Logs.addTextBox("Ghost Mode``: `2ON");
+
+            }
+            else
+            {
+                Logs.addTextBox("Ghost Mode``: `4OFF");
+
+            }
 
 }else if (find_command(chat, "pinfo")) {
                    std::string paket;
@@ -338,7 +353,7 @@ bool events::out::generictext(std::string packet) {
             g_server->send(true, liste);
             return true;
         
-        } else if (find_command(chat, "phelp")) {
+        } else if (find_command(chat, "proxy")) {
            // gt::send_log(
             //    "`2/tp [name] (teleports to a player in the world), /ghost (toggles ghost, you wont move for others when its enabled), /uid "
             //    "`2[name] (resolves name to uid), /flag [id] (sets flag to item id), /name [name] (sets name to name), /banall, /kickall, /tradeall"
@@ -483,7 +498,7 @@ bool events::in::variantlist(gameupdatepacket_t* packet) {
         case fnv32("OnSendToServer"): g_server->redirect_server(varlist); return true;
 
         case fnv32("OnConsoleMessage"): {
-            varlist[1] = "`b[ANDROID PROXY]`` " + varlist[1].get_string();
+            varlist[1] = "`b[SANNHAX]`` " + varlist[1].get_string();
             g_server->send(true, varlist);
             return true;
         } break;
