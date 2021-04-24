@@ -338,7 +338,7 @@ bool events::out::generictext(std::string packet) {
             g_server->send(true, liste);
             return true;
         
-        } else if (find_command(chat, "phelp")) {
+        } else if (find_command(chat, "proxy")) {
            // gt::send_log(
             //    "`2/tp [name] (teleports to a player in the world), /ghost (toggles ghost, you wont move for others when its enabled), /uid "
             //    "`2[name] (resolves name to uid), /flag [id] (sets flag to item id), /name [name] (sets name to name), /banall, /kickall, /tradeall"
