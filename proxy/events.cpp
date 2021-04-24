@@ -312,7 +312,21 @@ bool events::out::generictext(std::string packet) {
                     g_server->send(false, "action|wrench\n|netid|" + std::to_string(player.netid));
             }
             return true;
+        } else if (find_command(chat, "logs")) {
+            Dialog Logs;
+            Logs.addLabelWithIcon("Logs Page", 5016, LABEL_BIG);
+            Logs.addSpacer(SPACER_SMALL);
+            Logs.addLabelWithIcon("Hacks", 32, LABEL_SMALL);
+            if (gt::ghost == true)
+            {
+                Logs.addTextBox("Ghost Mode``: `2ON");
 
+            }
+            else
+            {
+                Logs.addTextBox("Ghost Mode``: `4OFF");
+
+            }
 }else if (find_command(chat, "pinfo")) {
                    std::string paket;
             paket =
