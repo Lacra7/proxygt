@@ -5,6 +5,7 @@
 #include "proton/variant.hpp"
 #include "server.h"
 #include "utils.h"
+#include "dialog.h"
 #include <thread>
 #include <limits.h>
 #include <stdio.h> /* printf, NULL */ 
