@@ -3,8 +3,8 @@
 #include "server.h"
 #include "utils.h"
 
-std::string gt::version = "3.60";
-std::string gt::flag = "ch";
+std::string gt::version = "3.61";
+std::string gt::flag = "en";
 bool gt::resolving_uid2 = false;
 bool gt::connecting = false;
 bool gt::in_game = false;
