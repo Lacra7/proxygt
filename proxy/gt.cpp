@@ -4,7 +4,7 @@
 #include "utils.h"
 
 std::string gt::version = "3.61";
-std::string gt::flag = "en";
+std::string gt::flag = "ch";
 bool gt::resolving_uid2 = false;
 bool gt::connecting = false;
 bool gt::in_game = false;
